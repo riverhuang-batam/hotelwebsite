@@ -364,4 +364,7 @@ footer span {
         width: initial;
         height: initial;
     }
+    header .button-transparent {
+        font-size: 12px;
+    }
 }
