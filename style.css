@@ -1,41 +1,139 @@
-*{
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Cormorant+Garamond|Dancing+Script|Rosarivo|Satisfy|Shadows+Into+Light&display=swap');
+
+
+/* 
+font-family: 'Rosarivo', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Caveat', cursive;
+font-family: 'Satisfy', cursive; 
+*/
+* {
     padding: 0;
     margin: 0;
 }
 
 header,
-section{
+section {
     overflow-x: hidden;
 }
-
-header{
-    background: linear-gradient(
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.6)),url("/assets/hotel/mainhotel.jpg") no-repeat;
+h2{
+    font-family: 'Cormorant Garamond', serif;
+}
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)), url("/assets/hotel/mainhotel.jpg") top no-repeat;
     background-size: cover;
     width: 100%;
-    height: 90vh
-    
-}
-header a{
-    text-decoration: none;
-    color:whitesmoke;
-}
-header h1{
-    color: whitesmoke;
-}
-.image-black{
-    /* display:block;
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background:rgba(0,0,0,0.6);
-    background-size: cover; */
+    height: 100vh;
 }
 
-.section2{
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header h1{
+    
+    font-size: 2.5em;
+    font-family: 'Rosarivo', serif;
+}
+header .top-text-header{
+    color: #FFD788;
+}
+
+header .bottom-text-header{
+    color: #ffffff;
+}
+header .container.text-center .align-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.navbar {
+    padding-top: 4%;
+}
+
+header .header-button {
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .button-transparent {
+    background: transparent;
+    border: #fff 2px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 200px;
+}
+
+header .button-transparent:hover {
+    color: white;
+    cursor: pointer;
+}
+
+header nav i {
+    color: white;
+}
+
+.section1 {
+    padding: 8vmin 0;
+}
+.section1 h1{
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 10px;
+}
+.section1 h2{
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 10px;
+}
+
+.section1 h1::after{
+    content: '';
+    background: #FFD788;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.section1 img {
+    opacity: 0.9;
+    width: 80%;
+    height: 80vh;
+    border-radius: 0.2em;
+}
+
+.section1 .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+
+.section1 .row .col-md-6:last-child {
+    position: relative;
+}
+
+.section2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/foods/food0.jpg);
     background-size: cover;
     background-position: center;
@@ -43,11 +141,11 @@ header h1{
     color: #fff;
     text-align: center;
     padding: 100px;
-    font-family: sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 38px;
 }
 
-.section4{
+.section4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/facility/facility0.jpg);
     background-size: cover;
     background-position: center;
@@ -55,31 +153,207 @@ header h1{
     color: #fff;
     text-align: center;
     padding: 100px;
-    font-family: sans-serif;
+    font-family: 'Amatic SC', cursive;
     font-size: 38px;
 }
 
-.section6{
+.section6 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/foods/food0.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #fff;
-    text-align: center;
-    padding: 100px;
-    font-family: sans-serif;
-    font-size: 38px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Satisfy', cursive;
+}
+.section6 h1{
+    color: white;
+}
+.section6 .col-md-3{
+    padding-top: 10px;
 }
 
-.section3 img{
-    width: 80%
+.section6 .btn {
+    float: right;
+}
+.section3{
+    padding: 30px 0 30px 0;
+}
+.section3 img {
+    width: 80%;
+    height: 50vh;
+}
+
+.section3 h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+.section3 h1{
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 10px;
+}
+.section3 h1::after{
+    content: '';
+    background: #FFD788;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 10px;
+}
+.section3 .row{
+    padding: 30px 0 30px 0;
 }
 .section3 h2{
+    padding-bottom:20px;
+}
+
+.section5{
+    padding: 30px 0 30px 0;
+}
+.section5 .row{
+    padding: 25px 0 25px 0;
+}
+.section5 h1{
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 10px;
+}
+.section5 h1::after{
+    content: '';
+    background: #FFD788;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 10px;
+    
+}
+.section5 img {
+    width: 85%
+}
+
+.section5 h2 {
     text-align: center;
+    padding-top: 10px;
 }
-.section5 img{
-    width: 80%
+
+
+.section7 h1{
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 10px;
 }
-.section5 h2{
+.section7 h1::after{
+    content: '';
+    background: #FFD788;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 10px;
+    
+}
+.section7 {
+    padding: 50px 0 50px 0;
+}
+
+.section7 img {
+    width: 100%;
+}
+
+.section7 .button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 32px;
+    float: right;
+    margin-top: 40px;
 }
+
+.section8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/hotel/reviewbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: sans-serif;
+    font-family: 'Caveat', cursive;
+}
+.section8 h1{
+    color:white;
+}
+
+.section8 .card-img-top img {
+    height: 175px;
+}
+.section9{
+    padding: 30px 0 30px 0;
+}
+.section9 h1{
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 10px;
+}
+.section9 h1::after{
+    content: '';
+    background: #FFD788;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 10px;
+    
+}
+
+.section10{
+    padding: 25px 0 50px 0;
+}
+.section10 h1{
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 10px;
+}
+.section10 h1::after{
+    content: '';
+    background: #FFD788;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 10px;
+    
+}
+.section10 p {
+    font-size: 1.2em;
+    padding-top: 8%;
+}
+
+.section10 .button{
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 32px;
+    float: right;
+}
+
+.section i {
+    color: #dd2476;
+}
+
+
+footer {
+    background-color: #000000;
+    color: white;
+    overflow-x: hidden;
+    padding: 10vmin 14vmin
+}
+
+footer i {
+    color: #dd2476;
+}
+
+footer span {
+    color: #ee1414;
+}
+
