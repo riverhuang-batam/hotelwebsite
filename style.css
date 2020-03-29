@@ -357,3 +357,11 @@ footer span {
     color: #ee1414;
 }
 
+
+@media only screen and (max-width: 768px){
+    .section1 .row .col-md-6 .panel{
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+}
